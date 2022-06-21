@@ -1,3 +1,5 @@
+NameVirtualHost *:80
+
 <VirtualHost *:80>
     ServerAdmin www.competencia-latam.cl
     ServerAlias www.competencia-latam.cl
@@ -12,4 +14,12 @@
     DocumentRoot /var/www/www.esl-nitefort.cl/html
     ErrorLog /var/www/www.esl-nitefort.cl/log/error.log
     CustomLog /var/www/www.esl-nitefort.cl/log/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin www.nitefort.cl
+    ServerAlias www.nitefort.cl
+    DocumentRoot /var/www/www.nitefort.cl/html
+    ErrorLog /var/www/www.nitefort.cl/log/error.log
+    CustomLog /var/www/www.nitefort.cl/log/access.log combined
 </VirtualHost>
